@@ -5,9 +5,10 @@
 	<meta charset="UTF-8">
 	<title>Hall Pass</title>
 	<style type="text/css">
-	html {
-		font-family: sans-serif;
-	}
+	html * {
+ font-family: "Comic Sans MS", cursive, sans-serif;
+        padding: 5px;
+}
 	td {
 		vertical-align: top;
 		padding-top: 0.2em;
@@ -22,6 +23,7 @@
 	}
 	</style>
 </head>
+    <link href = "https://mbhs.edu/favicon.ico" rel = "shortcut icon">
 <body>
   <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -61,7 +63,8 @@ body {
 <body>
 
 <div class="top-container">
-    <h1><font color = #990000>Welcome</font></h1>
+    <h1><font color = #990000>Welcome, Maggots</font></h1>
+    <body><strong>Need to leave class?</strong></body>
 </div>
 
 <div class="header" id="myHeader">
@@ -93,8 +96,17 @@ function myFunction() {
 		<tbody>
 			<tr>
                 <td><font color = #990000><strong>Student ID</strong></font></td>
-				<td style="width:100%"><textarea placeholder="Enter your Student ID" id="text-input" style="width:100%; max-width:30em; height:5em; font-family:inherit" oninput="redrawQrCode();"></textarea></td>
+				<td style="width:100%"><textarea placeholder="Enter 6-Digit ID" id="text-input" style="width:100% ; max-width:30em; height:2em; font-family:inherit" maxlength="6" oninput="redrawQrCode();"></textarea></td>
 			</tr>
+            <tr>
+                <td><font color = #990000><strong>Start</strong></font></td>
+                <td style="width:100%"><textarea placeholder="Enter Starting Point" id="start" style="width:100%; max-width:30em; height:2em; font-family:inherit" oninput="redrawQrCode();"></textarea></td>
+            </tr>
+            <tr>
+                <td><font color = #990000><strong>Destination</strong></font></td>
+                <td style="width:100%"><textarea placeholder="Enter Destination" id="destination" style="width:100%; max-width:30em; height:2em; font-family:inherit" oninput="redrawQrCode();"></textarea></td>
+            </tr>
+            
 			<tr>
                 <td><font color = #990000><strong>QR Code:</strong></font></td>
 				<td>
@@ -105,6 +117,9 @@ function myFunction() {
 					</svg>
 				</td>
 			</tr>
+            
+           
+
             
 			<tr>
                 <td><font color = #990000>Error correction:</font></td>
